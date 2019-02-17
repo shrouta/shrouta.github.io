@@ -1,3 +1,3 @@
 name: DCS Translations
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: /translations/:year/:month/:day/:title
