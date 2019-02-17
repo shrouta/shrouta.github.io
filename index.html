@@ -2,7 +2,22 @@
 layout: default
 title: DCS Translations
 ---
-<div class="blurb">
-	<h1>Language Translations</h1>
-	<p>Check this space for advice on translating among different programming languages, for classes in DCS at Bates College</p>
-</div><!-- /.blurb -->
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
