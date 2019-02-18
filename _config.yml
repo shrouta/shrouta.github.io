@@ -10,4 +10,4 @@ github_username:  shrouta
 
 # Build settings
 markdown: kramdown
-permalink: /:year/:title:output_ext
+permalink: /translations/:year/:month/:day/:title
